@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@font-face {font-family: 'Sam3KRFont';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'PFStardust';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');font-weight: normal;font-style: normal;}
+
+.categories{
+	width:1460px;
+	height:300px;
+	padding-top: 50px;
+	padding-left:100px;
+}
+.category{
+	width:180px;
+	height:180px;
+	float:left;
+	margin-left:100px;
+	cursor: pointer;
+}
+.category img{
+	width:180px;
+	height:180px;
+	border-radius: 50%;
+}
+
+.title{
+	text-align: center;
+	position:relative;
+	bottom:0px;
+}
+.title a{
+	text-decoration: none;
+}
+
+/*------- 중분류샵-------*/
+.intro{
+	width:1000px;
+	height:150px;
+	margin:0 auto;
+	margin-top:50px;
+	background-color:white;
+}
+.intro img{
+	height:200px;
+	width:250px;
+}
+.imgposition{
+	height:200px;
+	width:250px;
+	position:absolute;
+	bottom:0px;
+	left:1000px;
+}
+.midcatContainer{
+	background-color: #fff;
+}
+.midcatBorder{
+	width: 95%;
+	margin: 0 auto;
+	background-color: #d8edf8;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	font-size: 22px;
+	font-family: "넥슨고딕";
+	font-weight: bold;
+	margin-bottom: 100px;
+}
+.midcatBorder_Top{
+	display: flex;
+	justify-content: space-around;
+	padding:13px;
+	cursor:pointer;
+}
+.midcatBorder_Content{
+	display: flex;
+}
+.midcatBorder_Left{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 13px;
+	width: 200px;
+}
+.midcatBorder_Left div{
+	margin: 5px;
+}
+.midcatBorder_Right{
+	display: flex;
+	width: 90%;
+	min-height: 500px;
+	position:relative;
+}
+ul{
+	list-style-type: none;
+}
+ .pagewrapper{
+	position:absolute;
+	top:100%;
+	width:50%;
+	left:23%;
+	border:1px solid black;
+} 
+.table{
+	padding-top:100px;
+	position:absolute;
+	left:170px;
+	font-family:PFStardust;
+}
+button{
+	font-family:Sam3KRFont;
+}
+.pagination{
+	position:absolute;
+	left:400px;
+	bottom:0px;
+}
+.pagination span{
+	padding-left:5px;
+}
+/*------- 상품등록-------*/
+.center{
+	position:absolute;
+	right:400px;
+	top:270px;
+	text-align:center;
+	font-family: Sam3KRFont;
+}
+.center button{
+	width:600px;
+}
+.center input{
+	width:500px;
+}
+table{
+	height:800px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,358 @@
+@charset "UTF-8";
+body{
+	padding: 0;
+	/* background: linear-gradient(#000000, #fff); */
+	/* background: linear-gradient(rgb(240, 200, 254),rgb(204, 255, 245)); */
+	background-color: #eee;
+	width: 1200px;
+	margin: 0 auto;
+}
+@font-face{
+	font-family: "넥슨고딕";
+	src: url("/font/nexon/nexon_gothicotflight.woff");
+}
+@font-face{
+	font-family: "넥슨고딕";
+	src: url("/font/nexon/nexon_gothicotfbold.woff");
+	font-weight: bold;
+}
+/*-------------------------body 안부터 시작--------------------------------- */
+.container{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 15px; 
+}
+/*------------------------- 헤더 --------------------------------- */
+.top{
+	display: flex;
+	justify-content: space-between;
+}
+.top_Title{
+	font-size: 38px;
+	font-weight: bold;
+	align-self: center;
+	cursor: pointer;
+}
+.top_Signup{
+	display: flex;
+	align-self: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+.top_Signup_Item{
+	margin: 15px;
+	padding: 8px;
+	cursor: pointer;
+}
+.middle{
+	min-height: 800px;
+	width: 95%;
+	margin: 0 auto;
+}
+/*------------------------- 관리자 보더 --------------------------------- */
+.adminBorder{
+	background-color: #fff;
+}
+.adminMenu{
+	display: flex;
+	justify-content: space-between;
+}
+.adminMenu_Item{
+	width: 25%;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	padding: 0.8em;
+	align-self: center;
+	text-align: center;
+	background-color: #000000;
+	color: #fff;
+	cursor: pointer;
+}
+.adminMenu_Item:hover{
+	color:#e2e2e2;
+}
+.adminContent{
+	min-height: 500px;
+}
+/*-----------------------질문답변-------------------------------*/
+.admin_AskListBorder{
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+}
+.admin_AskList{
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: 0 auto;
+	font-size: 20px;
+	border: 1px solid #000000;
+	padding: 8px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.admin_AskList:hover{
+	background-color: #c3c3c3;
+}
+.admin_AskListItem_Num{
+	width: 5%;
+	text-align: center;
+	font-weight: bold;
+}
+.admin_AskListItem_Category{
+	width: 15%;
+	text-align: center;
+}
+.admin_AskListItem_Subject{
+	width: 40%;
+	text-align: center;
+}
+.admin_AskListItem_UserEmail{
+	width: 30%;
+	text-align: center;
+}
+.admin_AskListItem_FeedBack{
+	width: 10%;
+	text-align: center;
+	font-weight: bold;
+}
+.admin_searchOption{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0.8em;
+	border: 0px solid#000000;
+	margin-bottom: 0.8em;
+}
+.admin_searchOption div {
+	margin: 8px;
+}
+.admin_searchOption select{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	padding: 0.4em;
+}
+.admin_searchOption input{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	padding: 0.4em;
+}
+.admin_searchOption button{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	padding: 0.4em;
+}
+/*----------------------질문답변 뷰페이지----------------------------  */
+.admin_ViewAsk{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.askImg img{
+	max-height: 220px;
+	max-width: 220px;
+}
+.admin_ViewAskItem{
+	margin: 1.2em;
+}
+.admin_ViewAskItem_Text{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+}
+.admin_ViewAskItem_askcontent{
+	border: 3px solid#000000;
+	border-radius: 15px 15px 15px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	padding: 1.2em;
+}
+.admin_ViewAskButton{
+	display: flex;
+	margin: 1.2em;
+}
+.admin_ViewAskButton > div {
+	margin: 0.6em;
+}
+.admin_ViewAskButton input {
+	padding: 0.6em;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	background-color: #77c6e8;
+	border: 0px solid#000000;
+	color: #fff;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.admin_ViewAskButton input:hover{
+	background-color: #51b6e1;
+}
+.admin_ViewAskButton input:focus {
+	border: none;
+	outline: none;
+}
+.admin_FeedTextarea{
+	width: 95%;
+	margin: 0 auto;
+}
+.admin_FeedTextarea textarea{
+	width: 100%;
+	min-height: 150px;
+	font-size: 18px;
+	
+}
+.admin_FeedSendButton{
+	margin: 1.2em;
+	display: flex;
+}
+.admin_FeedSendButton input{
+	background-color: #444444;
+	color: #fff;
+	border: 0px solid#444444;
+	padding: 8px;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin: 0.8em;
+}
+.admin_FeedSendButton input:focus {
+	outline: none;
+}
+/*----------------------어드민 유저관리 페이지----------------------------  */
+.Admin_UserList{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.Admin_User{
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	border: 0px solid#000000;
+	font-size: 22px;
+	margin: 0.8em;
+	background-color: #e2f2fa;
+	border-radius: 75px 35px 35px 75px;
+	color: #525252;
+	cursor: pointer;
+	position: relative;
+}
+.Admin_User{
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	border: 0px solid#000000;
+	font-size: 22px;
+	margin: 0.8em;
+	background-color: #e2f2fa;
+	border-radius: 75px 35px 35px 75px;
+	color: #525252;
+	cursor: pointer;
+	position: relative;
+}
+.Admin_User:hover{
+	background-color: #bce1f3;
+}
+.Admin_User_Num{
+	width: 5%;
+	text-align: center;
+}
+.circle{
+	background-color: #25a3d8;
+	color: #fff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid#fff;
+}
+.circle > div {
+	text-align: center;
+}
+.Admin_User_Name{
+	width: 20%;
+	text-align: center;
+	align-self: center;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+}
+.Admin_User_ID{
+	width: 25%;
+	text-align: center;
+	align-self: center;
+}
+.Admin_User_NickName{
+	width: 35%;
+	text-align: center;
+	align-self: center;
+}
+.Admin_User_Email{
+	width: 40%;
+	text-align: center;
+	align-self: center;
+}
+.Admin_User_Level{
+	width: 25%;
+	text-align: center;
+	align-self: center;
+}
+/*---------------------유저 상세보기-----------------------  */
+.Admin_ViewUserBorder{
+	position: absolute;
+	background-color: #fff;
+	border-radius: 35px;
+	width: 100%;
+	top: 105%;
+	z-index: 10;
+	border: 2px solid#eee;
+	height: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
+	padding: 8px;
+	
+}
+.userINFO{
+	padding: 1.2em;
+	border: 1px solid#fff;
+	background-color: #edf7fc;
+	border-radius: 35px;
+}
+.INFO_title{
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	font-size: 22px;
+}
+.userIMG{
+	padding: 1.2em;
+	border: 0px solid#fff;
+	background-color: #e2defb;
+	border-radius: 35px;
+}
+.userIMG img{
+	width: 15px;
+	height: 15px;
+}
+.closeButton{
+	font-size: 22px;
+	font-weight: bold;
+	border-radius: 8px;
+	padding: 4px;
+}
+
+
+
+

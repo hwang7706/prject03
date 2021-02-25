@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.center{
+	position:absolute;
+	right:350px;
+	top:270px;
+	text-align:center;
+	font-family: Sam3KRFont;
+}
+p{
+	text-align:right;
+}
+.center button{
+	width:770px;
+}

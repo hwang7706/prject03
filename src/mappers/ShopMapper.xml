@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.ShopMapper">
+
+	<insert id="write">
+		insert into shop (itemName,itemTitleCategory,itemMidCategory,itemBottomCategory,itemPrice,img_m) values (#{itemName},#{itemTitleCategory},#{itemMidCategory},#{itemBottomCategory},#{itemPrice},#{img_m})
+	</insert>
+	
+	<select id="itemTitleCat" resultType="ShopVO">
+		select * from shop where itemTitleCategory=#{itemTitleCategory}
+	</select>
+	
+	<select id="getCategory" resultType="String">
+		select itemBottomCategory from shop where itemMidCategory = #{itemMidCategory} and itemTitleCategory = #{itemTitleCategory} group by itemBottomCategory
+	</select>
+	<select id="getCategory1" resultType="ShopVO">
+		select * from shop where itemBottomCategory=#{itemBottomCategory} and itemTitleCategory = #{itemTitleCategory} and not itemName = "" limit #{firstlimitPage},#{showPage}
+	</select>
+	<select id="getShopListMidSelect" resultType="ShopVO">
+		select * from shop where itemMidCategory=#{itemMidCategory} and itemTitleCategory=#{itemTitleCategory} and not itemName = "" limit #{firstlimitPage},#{showPage}
+	</select>
+	<select id="getAllitemList1" resultType="ShopVO">
+		select * from shop where itemTitleCategory=#{seller} limit #{firstlimitPage}, #{showPage}
+	</select>
+	<insert id="sellerUpdate">
+		insert into seller(sellerName,sellerEmail,sellerDomain,sellerImage) values(#{sellerName},#{sellerEmail},#{sellerDomain},#{sellerImage})
+	</insert>
+	<select id="getSellers" resultType="SellerVO">
+		select * from seller
+	</select>
+	<select id="getSeller" resultType="SellerVO">
+		select * from seller where sellerDomain=#{Category}
+	</select>
+	<select id="getAllCategory" resultType="String">
+		select itemBottomCategory from shop where itemTitleCategory=#{itemTitleCategory} group by itemBottomCategory
+	</select>
+	<select id="getItembyuid" resultType="ShopVO">
+		select * from shop where itemUID = #{uid}
+	</select>
+	<select id="getItemPrice" resultType="String">
+		select itemPrice from shop where itemUID = #{uid}
+	</select>
+	<select id="count" resultType="int">
+		select count(*) from shop where itemTitleCategory=#{seller}
+	</select>
+</mapper>

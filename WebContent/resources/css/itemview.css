@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@font-face {font-family: 'Sam3KRFont';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'PFStardust';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');font-weight: normal;font-style: normal;}
+.order{
+	position:absolute;
+	right:400px;
+	top:270px;
+	text-align:center;
+}
+td{
+	text-align:center;
+	font-family:PFStardust;
+}
+.addtocart{
+	height:20px;	
+}

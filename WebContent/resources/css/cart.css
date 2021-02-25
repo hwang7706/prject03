@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.cartpage{
+	position:absolute;
+	right:480px;
+	top:270px;
+	text-align:center;
+	font-family:Sam3KRFont;
+}

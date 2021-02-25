@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@font-face {font-family: 'Sam3KRFont';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'PFStardust';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');font-weight: normal;font-style: normal;}
+
+/*------------------------------------------------  */
+.attend{
+	position:absolute;
+	right:100px;
+	top:270px;
+	text-align:center;
+	font-family:Sam3KRFont;
+}
+
+.attendBorder{
+	background-color: #fff;
+	min-height: 740px;
+	padding-bottom: 120px;
+}
+.attendTitle{
+
+	padding: 15px;
+}
+.title p{
+	text-align:center;
+	font-size:50px;
+}
+.attendTitle_Text{
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	align-self: center;
+}
+.selectDate{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+}
+.selectDateItem{
+	background-color: #e48d4e; 
+	width: 120px;
+	height: 120px;
+	margin: 15px;
+	border-radius: 10%;
+	border: 2px solid#000000;
+}
+.dateMonth{
+	font-weight: bold;
+	padding: 5px;
+	color: #fff;
+}
+.dateDate{
+	display: flex;
+	padding: 5px;
+	font-size: 24px;
+	justify-content: space-between;
+}
+.today{
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 3px;
+}
+.nowYear{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 32px;
+	font-weight: bold;
+	padding-top: 15px;
+}
+.todayCheckMember{
+	padding: 5px;
+	font-size: 22px;
+	color: red;
+	font-weight: bold;
+	float: right;
+}
+.attendUser{
+	font-size: 24px;
+	font-weight: bold;
+	
+	align-self: center;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 0px solid#000000;
+	padding: 15px;
+}
+.attendInput{
+	height:200px;
+}
+.attendInput > input{
+	width: 800px;
+	height: 60px;
+	font-size: 22px;
+	border: 1px solid#000000;
+}
+.attendInput > input::placeholder{
+	font-family:Sam3KRFont;
+}
+button{
+	width: 180px;
+	height: 60px;
+	font-size:35px;
+}
+.attendList{
+	width: 80%;
+	margin: 0 auto;
+}
+.attendListItem{
+	display: flex;
+	flex-direction: column;
+	margin-top: 25px;
+}
+.listUserINFO{
+	display: flex;
+	font-size: 18px;
+}
+.userINFO_Level{
+	width: 60px;
+	text-align: center;
+}
+.listUserINFO > div{	
+	margin: 10px 12px;
+}
+
+.UserINFO_date{
+	font-size: 14px;
+	align-self: flex-end;
+}
+.listContent{
+	background-color: #efefef;
+	min-height: 45px;
+	font-size: 18px;
+	padding-left: 15px;
+}
+.attendUpdateElement{
+	width: 90%;
+	margin: 0 auto;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.attendUpdateInput{
+	width: 80%;
+	height: 40px;
+}
+.attendUpdateButton{
+	width: 20%;
+	height: 40px;
+	color: #fff;
+	background-color: #5ebbe3;
+	border: 0px solid#000000;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 8px;
+}
+
+
+
+
+
+
+

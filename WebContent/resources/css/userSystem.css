@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*회원 시스템에 관련됀 문서들의 CSS*/
+
+@font-face{
+	font-family: "넥슨고딕";
+	src: url("/font/nexon/nexon_gothicotflight.woff");
+}
+@font-face{
+	font-family: "넥슨고딕";
+	src: url("/font/nexon/nexon_gothicotfbold.woff");
+	font-weight: bold;
+}
+@font-face {font-family: 'Sam3KRFont';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'PFStardust';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');font-weight: normal;font-style: normal;}
+/* ---------------------------로그인----------------------------- */
+.loginBorder{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 320px;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 8px 8px 0px 0px
+}
+.loginInput{
+	margin: 8px;
+}
+.loginInput > input{
+	font-size: 18px;
+	font-weight: bold;
+	width: 450px;
+	height: 2em;
+	border-radius: 5px;
+	padding-left: 1.5em;
+}
+.loginButton{
+	display: flex;
+	cursor: pointer;	
+	margin-top: 10px;
+}
+.loginButton button{
+	width:450px;
+}
+.loginButton div{
+	width: 448px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	border: 0px solid#000000;
+	border-radius: 5px;
+	background: linear-gradient(to right, rgb(240, 200, 254),rgb(204, 255, 245));
+	-webkit-background-clip: text; /* 백그라운드 컬러를 text 에만 적용하는 속성 */
+	color: transparent;/* 글자를 투명하게 만드는 속성 */
+	padding: 5px 0px;
+	font-family: "넥슨고딕";
+	letter-spacing: 5px; /* 자간 속성 */
+}
+.loginoption{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2px;
+	width: 452px;
+	margin: 0 auto;
+	color: #000000;
+}
+.loginoption_Item{
+	cursor: pointer;
+	text-align: center;
+	border: 0px solid#000000;
+	background-color: #bce0f3;
+	padding: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	border-radius: 0px 0px 8px 8px;
+}
+.loginoption_Item:hover {
+	background-color: #e5d8fb;
+}
+/* ---------------------------회원가입---------------------------- */
+.signupContainer{
+position:absolute;
+	right:300px;
+	top:270px;
+	text-align:center;
+	font-family:Sam3KRFont;
+}
+.signupBorder{
+	display: flex;
+	flex-direction: column;
+	height: 870px;
+	/* justify-content: center; */
+	background-color: #fff;
+	border-radius: 8px 8px 0px 0px;
+}
+.signupItem{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.signupText{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+	padding: 9px 0px;
+}
+.signupInput{
+	display: flex;
+}
+.signupInput input{
+	font-size: 18px;
+	width: 280px;
+	padding: 5px;
+	/* padding-left: 1em; */
+	
+}
+.signupIDCheck{
+	align-self: center;
+	margin-left: 35px;
+	font-weight: bold;
+	border: 2px solid#000000;
+	padding: 5px; 
+	border-radius: 10px;
+}
+.signupButton{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 35px;
+	
+}
+.signupButton input{
+	font-size: 22px;
+	width: 100%;
+	padding: 8px;
+	background-color: #2f3136;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.signupINFO{
+	align-self: flex-end;
+	/* border: 1px solid#000000; */
+	margin-left: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "넥슨고딕";
+}
+/*---------------------아이디 검색결과 창--------------------  */
+.IDsearchAfterBorder{
+	font-size: 24px;
+	font-family: "넥슨고딕";
+	display: flex;
+	flex-direction: column;
+}
+.IDsearchAfterItem{
+	margin: 25px;
+}
+.IDsearchAfterItem_Text{
+	width: 120px;
+}
+.IDsearchAfterBorder_button{
+	width: 200px;
+	border: 2px solid#000000;
+	text-align: center;
+	letter-spacing: 3px;
+	padding: 8px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: "넥슨고딕";
+	font-weight: bold;
+	box-shadow: 4px 4px 3px;
+	color: #5a5a5a;
+}
+/*--------------------비밀번호  검색결과 창--------------------  */
+.PasswordsearchAfterBorder{
+	font-size: 22px;
+}
+.PasswordsearchAfterItem{
+	text-align: center;
+	margin: 15px;
+}
+.PasswordsearchAfterItem input{
+	width: 330px;
+	padding: 4px;
+	font-size: 18px;
+}
+.PasswordsearchAfterButton{
+	border: 2px solid#000000;
+	border-radius: 10px;
+	width: 330px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+/* ---------------------------마이페이지----------------------------- */
+table{
+	font-family:Sam3KRFont;
+}
+.myPage{
+	position:absolute;
+	right:500px;
+	top:270px;
+}
+.myPage_UserName{
+	font-size: 24px;
+	font-family: "넥슨고딕";
+	font-weight: bold;
+	padding: 1em;
+}
+button{
+	width:500px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
